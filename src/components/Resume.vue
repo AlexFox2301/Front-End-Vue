@@ -2,7 +2,7 @@
 <div id="resumeComponent">
   <!--<h3>{{test}}</h3>-->
   <div class="row justify-content-md-center" id="resume">
-  <div class="col-ml-6" id="resumeForm">
+  <div class="col-md-6" id="resumeForm">
     <table id="resumeTable">
       <thead>
       <tr>

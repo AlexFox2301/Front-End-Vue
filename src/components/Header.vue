@@ -10,14 +10,14 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item active">
-            <router-link class="nav-link" id="log" to="/profil">Profil</router-link>
+            <router-link class="nav-link" id="prof" to="/profil">Profil</router-link>
             <!--<button class="nav-link" id="log" href="#">Login<span class="sr-only">(current)</span></button>-->
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" id="reg" to="/resume">Resume</router-link>
+            <router-link class="nav-link" id="res" to="/resume">Resume</router-link>
           </li>
           <li class="nav-item">
-            <router-link class="nav-link" id="profil" to="/task">Task</router-link>
+            <router-link class="nav-link" id="task" to="/task">Task</router-link>
           </li>
           <li class="nav-item">
             <router-link class="nav-link" id="resume" to="/exit">Exit</router-link>
@@ -26,17 +26,6 @@
       </div>
     </nav>
   </header>
-  <!--<div id="headerComponent">-->
-    <!--<ul>-->
-      <!--<li>-->
-        <!--<router-link to="/">Main</router-link>-->
-      <!--</li>-->
-      <!--<li>-->
-        <!--<router-link to="/resume">Resume</router-link>-->
-      <!--</li>-->
-
-    <!--</ul>-->
-  <!--</div>-->
 </template>
 
 <script>

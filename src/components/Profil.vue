@@ -3,52 +3,61 @@
     <div class="col-xl-8" id="profilForm">
     <div class="row">
       <div class="col-4" id="foto">
-        <img src="#" width="70%" alt="foto">
+        <img v-bind:src="prof.foto" width="70%" alt="foto">
       </div>
 
       <div class="col-8" id="dataUser">
 
         <div class="row">
           <div class="col col-xl-3">
-            <label class="" for="lastNameResult">Фамилия:</label></div>
+            <label class="" for="lastNameResult">Фамилия: </label>
+          </div>
           <div class="col col-xl-9">
-            <div class="font-italic" id="lastNameResult"></div>
+            <div class="font-italic" id="lastNameResult">{{prof.lastName}}</div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col col-xl-3">
+            <label class="" for="firstNameResult">Имя: </label></div>
+          <div class="col col-xl-9">
+            <div class="font-italic" id="firstNameResult">{{prof.firstName}}</div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-xl-3">
-            <label class="" for="secondNameResult">Отчество:</label>
+            <label class="" for="secondNameResult">Отчество: </label>
           </div>
           <div class="col-xl-9">
-            <div class="font-italic" id="secondNameResult"></div>
+            <div class="font-italic" id="secondNameResult">{{prof.secondName}}</div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-xl-3">
-            <label class="" for="addressResult">Адрес:</label>
+            <label class="" for="addressResult">Адрес: </label>
           </div>
           <div class="col-xl-9">
-            <div class="font-italic" id="addressResult"></div>
+            <div class="font-italic" id="addressResult">{{prof.address}}</div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-xl-3">
-            <label class="" for="schoolResult">ЗОШ:</label>
+            <label class="" for="schoolResult">ЗОШ: </label>
           </div>
           <div class="col-xl-9">
-            <div class="font-italic" id="schoolResult"></div>
+            <div class="font-italic" id="schoolResult">{{prof.school}}</div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-xl-3">
-            <label class="" for="educationResult">Образование:</label>
+            <label class="" for="educationResult">Образование: </label>
           </div>
           <div class="col-xl-9">
-            <div class="font-italic" id="educationResult"></div>
+            <div class="font-italic" id="educationResult">{{prof.education}}</div>
           </div>
         </div>
 
@@ -57,25 +66,25 @@
             <label class="" for="universityResult">ВУЗ:</label>
           </div>
           <div class="col-xl-9">
-            <div class="font-italic" id="universityResult"></div>
+            <div class="font-italic" id="universityResult">{{prof.university}}</div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-xl-3">
-            <label class="" for="facultyResult">Факультет:</label>
+            <label class="" for="facultyResult">Факультет: </label>
           </div>
           <div class="col-xl-9">
-            <div class="font-italic" id="facultyResult"></div>
+            <div class="font-italic" id="facultyResult">{{prof.faculti}}</div>
           </div>
         </div>
 
         <div class="row">
           <div class="col-xl-3">
-            <label class="" for="specialtyResult">Специальность:</label>
+            <label class="" for="specialtyResult">Специальность: </label>
           </div>
           <div class="col-xl-9">
-            <div class="font-italic" id="specialtyResult"></div>
+            <div class="font-italic" id="specialtyResult">{{prof.specialty}}</div>
           </div>
         </div>
 
@@ -91,7 +100,18 @@
     name: 'Profil',
     data() {
       return {
-
+        prof: {
+          foto: "..//foto//fotoTalanov.jpg",
+          lastName: "Таланов",
+          firstName: "Артем",
+          secondName: "Александрович",
+          address: "ПГУ 20А, кв.48",
+          school: "СОШ №44",
+          education: "Высшее техническое",
+          university: "Киевский национальный университет строительства и архитектуры",
+          faculti: "Строительные машины",
+          specialty: "Инженер механик"
+        }
       }
     },
   }
