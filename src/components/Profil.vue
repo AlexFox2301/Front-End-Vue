@@ -1,5 +1,5 @@
 <template>
-  <div class="row justify-content-md-center" id="resume">
+  <div class="row justify-content-md-center" id="profil">
     <div class="col-xl-8" id="profilForm">
     <div class="row">
       <div class="col-4" id="foto">
@@ -101,7 +101,7 @@
     data() {
       return {
         prof: {
-          foto: "..//foto//fotoTalanov.jpg",
+          foto: "../foto/fotoTalanov.jpg",
           lastName: "Таланов",
           firstName: "Артем",
           secondName: "Александрович",

@@ -75,15 +75,6 @@ export default {
     border-radius: 5px;
   }
 
-  #addJobForm{
-    /*display: none;*/
-    position: absolute;
-    padding: 10px;
-    border: black solid 1px;
-    border-radius: 5px;
-    background: #b3ffad;
-  }
-
   table{
     width: 100%;
   }

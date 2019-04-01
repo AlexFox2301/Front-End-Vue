@@ -1,7 +1,7 @@
 <template>
   <div id="addJobComponent">
     <!--<h3>{{test}}</h3>-->
-    <div class="row justify-content-md-center" id="resume">
+    <div class="row justify-content-md-center">
 
       <div class="col-xl-5" id="addJobForm">
 
@@ -99,8 +99,8 @@
         this.nameCompany = "";
         this.positionJob = "";
         this.duty = "";
-
       },
+
       cancelJob() {
         // alert(this.isActive);
         this.$emit('done', null);
