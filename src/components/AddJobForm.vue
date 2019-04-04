@@ -1,9 +1,9 @@
 <template>
   <div id="addJobComponent">
     <!--<h3>{{test}}</h3>-->
-    <div class="row justify-content-md-center">
+    <div class="row justify-content-center">
 
-      <div class="col-xl-5" id="addJobForm">
+      <div class="col-5" id="addJobForm">
 
         <div class="row">
           <div class="col-xl-6">
@@ -49,7 +49,8 @@
             <input type="text" v-model="duty" id="duty" placeholder="Обязанности">
             <!--<span>{{duty}}</span>-->
           </div>
-        </div><div class="row">
+        </div>
+        <div class="row">
         <div class="col-xl-3">
           <input class="btn btn-info" id="btnSaveJob" type="button"
                  @click="createJob"
@@ -128,6 +129,7 @@
   #addJobForm{
     /*display: none;*/
     position: absolute;
+    /*position: center;*/
     padding: 10px;
     border: black solid 1px;
     border-radius: 5px;

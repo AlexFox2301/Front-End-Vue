@@ -1,10 +1,7 @@
 <template>
   <div id="taskComponent">
 
-    <add-task-form v-if="isActiveAddTask" v-on:done="onAddFormDone"></add-task-form>
-
-
-    <div class="row justify-content-md-center" id="task">
+    <div class="row justify-content-center" id="task">
 
       <div class="col-xl-10" id="taskForm">
         <table class="taskTable" id="taskTable">
@@ -30,16 +27,20 @@
         <br>
         <div class="row">
           <div class="col-xl-4">
-<!--                <button id="btnAddTask" @click="addTask">Добавить</button>-->
-            <input id="btnAddTask" type="button"
-                   @click="addTask"
-                   value="Добавить">
+                <button id="btnAddTask" @click="addTask">Добавить</button>
+<!--            <input id="btnAddTask" type="button"-->
+<!--                   @click="addTask"-->
+<!--                   value="Добавить">-->
           </div>
         </div>
       </div>
 
     </div>
+    <add-task-form v-if="isActiveAddTask" v-on:done="onAddFormDone"></add-task-form>
+
+
   </div>
+
 </template>
 
 

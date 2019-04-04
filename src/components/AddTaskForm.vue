@@ -1,51 +1,52 @@
 <template>
   <div id="addTaskComponent">
-    <div class="row justify" id="addTaskForm">
-      <div class="col-xl-5">
+    <div class="row" id="addTaskForm">
+      <div class="col-10 ">
         <div class="row">
-          <div class="col-xl-5">
+          <div class="col-5">
             <label for="dateStartTask">Дата поступления</label>
           </div>
-          <div class="col-xl-5">
+          <div class="col-5">
             <input id="dateStartTask" type="text" v-model="dateStartTask" placeholder="Дата поступления">
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-5">
+          <div class="col-5">
             <label for="dateEndTask">Дата выполнения</label>
           </div>
-          <div class="col-xl-5">
+          <div class="col-5">
             <input id="dateEndTask" type="text" v-model="dateEndTask" placeholder="Дата выполнения">
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-5">
+          <div class="col-5">
             <label for="taskName">Наименование</label>
           </div>
-          <div class="col-xl-5">
+          <div class="col-5">
             <input id="taskName" type="text" v-model="taskName" placeholder="Наименование">
           </div>
         </div>
         <div class="row">
-          <div class="col-xl-6">
+          <div class="col-5">
             <label for="taskValue">Объем</label>
           </div>
-          <div class="col-xl-6">
+          <div class="col-5">
             <input id="taskValue" type="text" v-model="taskValue" placeholder="Объем">
           </div>
         </div>
 
-    </div>
-      <div class="row">
-        <div class="col-xl-3">
-          <!--            <button class="btn btn-primary" type="submit" id="btnAddTaskToForm">Добавить</button>-->
-          <input type="button" id="btnAddTaskToForm"
-                 @click="createTask" value="Добавить">
-        </div>
-        <div class="col-xl-3">
-          <!--            <button class="btn btn-primary" type="submit" id="btnNotAddTask">Отменить</button>-->
-          <input type="button" id="btnNotAddTask"
-                 @click="cancelTask" value="Отменить">
+        <div class="row">
+<!--          <div class="col-3">-->
+          <button @click="createTask" id="btnAddTaskToForm">Добавить</button>
+<!--            <input type="button" id="btnAddTaskToForm"-->
+<!--                   @click="createTask" value="Добавить">-->
+          <button @click="cancelTask" id="btnNotAddTask">Отменить</button>
+            <!--            <input type="button" id="btnNotAddTask"-->
+            <!--                   @click="cancelTask" value="Отменить">-->
+<!--          </div>-->
+<!--          <div class="col-3">-->
+<!--                        -->
+<!--          </div>-->
         </div>
       </div>
     </div>
@@ -99,10 +100,22 @@
 
   #addTaskForm{
     position: absolute;
+    /*position: center;*/
     background-color: #e5c1ff;
+    margin: 10px;
     padding: 10px;
     border: black solid 1px;
     border-radius: 5px;
+  }
+
+  button{
+    padding: 2px;
+    margin: 5px;
+  }
+
+  input{
+    padding: 5px;
+    margin: 5px;
   }
 
 

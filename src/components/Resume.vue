@@ -1,41 +1,43 @@
 <template>
 <div id="resumeComponent">
   <!--<h3>{{test}}</h3>-->
+<!--  <div class="container">-->
   <div class="row justify-content-md-center" id="resume">
-  <div class="col-md-6" id="resumeForm">
-    <table id="resumeTable">
-      <thead>
-      <tr>
-        <th>Дата поступления</th>
-        <th>Дата увольнения</th>
-        <th>Наименование организации</th>
-        <th>Должность</th>
-        <th>Обязаности</th>
-      </tr>
-      </thead>
+    <div class="col-md-6" id="resumeForm">
+      <table class="table-striped " id="resumeTable">
+        <thead>
+        <tr>
+          <th>Дата поступления</th>
+          <th>Дата увольнения</th>
+          <th>Наименование организации</th>
+          <th>Должность</th>
+          <th>Обязаности</th>
+        </tr>
+        </thead>
 
-      <tbody>
-      <tr v-for="job in jobs">
-        <td>{{job.dateStartJob}}</td>
-        <td>{{job.dateDismissalJob}}</td>
-        <td>{{job.nameCompanyJob}}</td>
-        <td>{{job.positionJobJob}}</td>
-        <td>{{job.dutyJob}}</td>
-      </tr>
-      </tbody>
-    </table>
-    <div class="row">
-      <div class="col-xl-4">
+        <tbody>
+        <tr class="table-active" v-for="job in jobs">
+          <td>{{job.dateStartJob}}</td>
+          <td>{{job.dateDismissalJob}}</td>
+          <td>{{job.nameCompanyJob}}</td>
+          <td>{{job.positionJobJob}}</td>
+          <td>{{job.dutyJob}}</td>
+        </tr>
+        </tbody>
+      </table>
+      <div class="row">
+        <div class="col-xl-4">
         <input id="btnAddJob" type="button"
                @click="addJob"
                value="Добавить">
       </div>
-    </div>
+      </div>
     </div>
 
     <add-job-form v-if="isActive" v-on:done="onAddFormDone"></add-job-form>
 
   </div>
+<!--  </div>-->
 </div>
 </template>
 
@@ -76,7 +78,7 @@ export default {
   }
 
   table{
-    width: 100%;
+    /*width: 100%;*/
   }
 
   th{
